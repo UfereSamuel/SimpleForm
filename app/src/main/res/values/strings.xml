@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SimpleForm</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Gender">
+        <item name="Select_Gender">Select Gender</item>
+        <item name="male">Male</item>
+        <item name="female">Female</item>
+    </string-array>
+
+    <string-array name="State">
+        <item name="Select_State">Select State</item>
+        <item name="Abia">Abia</item>
+        <item name="Anambra">Anambra</item>
+        <item name="Akwa_Ibom">Akwa Ibom</item>
+
+    </string-array>
+
+</resources>

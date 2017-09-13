@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.example.sammy.simpleform.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="50dp"
+        android:elevation="10dp"
+        android:layout_marginStart="81dp"
+        android:layout_above="@+id/etLname"
+        android:layout_alignStart="@+id/etFname"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/etLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:textSize="15dp"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etFname"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="15dp"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etLname"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="15dp"
+        android:inputType="text"
+        android:padding="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etEmail"
+        android:background="@drawable/border"/>
+
+    <Spinner
+        android:id="@+id/spGender"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAddress"
+        android:padding="5dp"
+        android:entries="@array/Gender"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:dropDownSelector="#fefefe"
+        android:background="@drawable/border">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/spState"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAddress"
+        android:padding="5dp"
+        android:entries="@array/State"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:dropDownSelector="#fefefe"
+        android:background="@drawable/border">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spGender"
+        android:layout_marginStart="40dp"
+        android:text="Submit"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowColor="#000"
+        android:shadowRadius="50"/>
+
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spGender"
+        android:layout_marginStart="200dp"
+        android:text="Reset"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowColor="#000"
+        android:shadowRadius="50"/>
+
+
+
+
+
+
+
+</RelativeLayout>
